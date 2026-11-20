@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abdul Sami's personal web development portfolio."
+    />
+    <title>Abdul Sami | Space Command Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="space-noise"></div>
+    <canvas id="starfield"></canvas>
+    <div class="scanlines"></div>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+      <a href="#home" class="logo">
+        <span class="logo-icon">✦</span> ABDUL <span>SAMI</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+
+      <nav id="navLinks">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="live-status">
+        <span class="status-dot"></span> SYSTEM ONLINE
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            DEVELOPER IDENTIFICATION // 001
+          </div>
+
+          <p class="small-heading">WELCOME TO MY DIGITAL UNIVERSE</p>
+
+          <h1>
+            I'M ABDUL<br />
+            <span class="gradient-text">SAMI</span>
+          </h1>
+
+          <h2 class="typing-line">
+            I AM AN <span id="typing"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-description">
+            Hello! I'm Abdul Sami, an aspiring web developer passionate about
+            creating modern websites, creative designs and interactive digital
+            experiences. I enjoy exploring new technologies, improving my coding
+            skills and transforming ideas into reality.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn"> EXPLORE PROJECTS ↗ </a>
+
+            <a href="#contact" class="btn secondary-btn"> CONTACT ME </a>
+          </div>
+
+          <div class="hero-coordinates">
+            <span>NAME: ABDUL SAMI</span>
+            <span>STATUS: LEARNING & CREATING</span>
+          </div>
+        </div>
+
+        <!-- 3D PLANET -->
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+
+          <div class="planet-glow"></div>
+
+          <div id="three-container"></div>
+
+          <div class="floating-panel panel-top">
+            <span>CORE TEMPERATURE</span>
+            <strong>24.8°C</strong>
+          </div>
+
+          <div class="floating-panel panel-bottom">
+            <span>ENERGY LEVEL</span>
+            <strong>98.7%</strong>
+            <div class="energy-bar"><span></span></div>
+          </div>
+
+          <div class="target-ring">✦</div>
+        </div>
+
+        <div class="scroll-indicator"><span></span> SCROLL TO EXPLORE</div>
+      </section>
+
+      <!-- SYSTEM STRIP -->
+      <section class="system-strip">
+        <div><span class="status-dot"></span> ALL SYSTEMS OPERATIONAL</div>
+        <div>MISSION: WEB DEVELOPMENT</div>
+        <div>TRANSMISSION: ACTIVE</div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal">
+          <p>01 // INTRODUCTION</p>
+          <h2>ABOUT <span class="gradient-text">ME</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card reveal">
+            <div class="card-icon">◈</div>
+            <h3>WHO IS ABDUL SAMI?</h3>
+            <p>
+              I'm Abdul Sami, a creative and ambitious web development learner
+              interested in building beautiful and responsive websites using
+              modern web technologies.
+            </p>
+          </div>
+
+          <div class="about-card glass-card reveal">
+            <div class="card-icon">⌘</div>
+            <h3>MY JOURNEY</h3>
+            <p>
+              I'm developing my skills in HTML, CSS and JavaScript. I enjoy
+              experimenting with layouts, animations, interactive features and
+              website design.
+            </p>
+          </div>
+
+          <div class="about-card glass-card reveal">
+            <div class="card-icon">✧</div>
+            <h3>MY GOAL</h3>
+            <p>
+              My goal is to become a skilled web developer, create professional
+              digital experiences and turn my creative ideas into real projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section skills-section" id="skills">
+        <div class="section-heading reveal">
+          <p>02 // TECHNOLOGY DATABASE</p>
+          <h2>MY <span class="gradient-text">ARSENAL</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal">
+            <span class="skill-number">01</span>
+            <div class="skill-icon">🌐</div>
+            <h3>HTML5</h3>
+            <p>Structure & architecture</p>
+            <div class="skill-track"><span style="width: 75%"></span></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <span class="skill-number">02</span>
+            <div class="skill-icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Design & animations</p>
+            <div class="skill-track"><span style="width: 70%"></span></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <span class="skill-number">03</span>
+            <div class="skill-icon">⚡</div>
+            <h3>JAVASCRIPT</h3>
+            <p>Logic & interactivity</p>
+            <div class="skill-track"><span style="width: 45%"></span></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <span class="skill-number">04</span>
+            <div class="skill-icon">🧊</div>
+            <h3>THREE.JS</h3>
+            <p>3D web experiments</p>
+            <div class="skill-track"><span style="width: 15%"></span></div>
+          </div>
+        </div>
+
+        <p class="small-note">
+          Skill levels are initial estimates. Update them as your experience
+          grows.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section projects-section" id="projects">
+        <div class="section-heading reveal">
+          <p>03 // MISSION ARCHIVE</p>
+          <h2>MY <span class="gradient-text">PROJECTS</span></h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-one">
+              <span class="project-symbol">◉</span>
+              <span class="project-code">MISSION_001</span>
+            </div>
+
+            <div class="project-info">
+              <p>WEB DEVELOPMENT</p>
+              <h3>SHOPZONE</h3>
+              <span>A modern e-commerce website concept.</span>
+              <a href="#contact" class="project-link">VIEW PROJECT ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-two">
+              <span class="project-symbol">☁</span>
+              <span class="project-code">MISSION_002</span>
+            </div>
+
+            <div class="project-info">
+              <p>UI / UX DESIGN</p>
+              <h3>3D WEATHER</h3>
+              <span>A futuristic weather website concept.</span>
+              <a href="#contact" class="project-link">VIEW PROJECT ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-three">
+              <span class="project-symbol">⌚</span>
+              <span class="project-code">MISSION_003</span>
+            </div>
+
+            <div class="project-info">
+              <p>CREATIVE DESIGN</p>
+              <h3>ROLEX CONCEPT</h3>
+              <span>A luxury-inspired watch website concept.</span>
+              <a href="#contact" class="project-link">VIEW PROJECT ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="small-note">
+          Replace the sample project links with your actual website URLs.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section section" id="contact">
+        <div class="contact-box glass-card reveal">
+          <p>04 // ESTABLISH CONNECTION</p>
+
+          <h2>
+            READY FOR THE<br />
+            <span class="gradient-text">NEXT MISSION?</span>
+          </h2>
+
+          <p>Have a creative idea? Let's build something extraordinary.</p>
+
+          <a href="mailto:YOUR_EMAIL@example.com" class="btn primary-btn">
+            SEND TRANSMISSION ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="#home" class="logo"> ✦ ABDUL <span>SAMI</span> </a>
+
+      <p>© <span id="year"></span> ABDUL SAMI. ALL RIGHTS RESERVED.</p>
+
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
